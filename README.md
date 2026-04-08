@@ -1,4 +1,4 @@
-# NestSort
+# REecSort
 
 **Recursive sort expression compiler.** Write a four-line `.nst` declaration, get a clean, null-safe, self-contained Python sort function — no runtime dependency, no boilerplate.
 
@@ -32,17 +32,17 @@ def sort_orders(orders):
     ))
 ```
 
-NestSort generates that code from a four-line declaration — and catches errors like missing keys and ambiguous directions *before* any code runs.
+RecSort generates that code from a four-line declaration — and catches errors like missing keys and ambiguous directions *before* any code runs.
 
 ---
 
 ## Installation
 
 ```bash
-pip install nestsort          # once published to PyPI
+pip install recsort          # once published to PyPI
 # or from source:
-git clone https://github.com/your-username/nestsort
-cd nestsort && pip install -e .
+git clone https://github.com/your-username/recsort
+cd recsort && pip install -e .
 ```
 
 ---
@@ -63,7 +63,7 @@ sort orders
 **2. Compile it**
 
 ```bash
-nestsort orders.nst
+recsort orders.nst
 # ✓ orders.nst → orders.py  (function: sort_orders)
 ```
 
