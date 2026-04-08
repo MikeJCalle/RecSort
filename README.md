@@ -1,4 +1,4 @@
-# REecSort
+# RecSort
 
 **Recursive sort expression compiler.** Write a four-line `.nst` declaration, get a clean, null-safe, self-contained Python sort function — no runtime dependency, no boilerplate.
 
