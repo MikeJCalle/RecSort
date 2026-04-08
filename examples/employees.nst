@@ -1,0 +1,6 @@
+# employees.nst — sort employees by department and hire date, skills by level
+sort employees
+  by department asc, hire_date asc
+  then skills
+    by level desc
+  nulls last

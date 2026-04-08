@@ -1,0 +1,6 @@
+# products.nst — sort products by category and rating, reviews by score
+sort products
+  by category asc, rating desc
+  then reviews
+    by score desc
+  nulls first

@@ -1,0 +1,6 @@
+# orders.nst — sort orders by status and date, items by price
+sort orders
+  by status asc, date desc
+  then items
+    by price asc
+  nulls last
