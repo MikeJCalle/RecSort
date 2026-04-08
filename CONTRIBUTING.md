@@ -1,16 +1,16 @@
-# Contributing to NestSort
+# Contributing to RecSort
 
-Thanks for your interest in contributing. NestSort is a small, focused compiler — every part of the codebase is intentionally readable and approachable.
+Thanks for your interest in contributing. RecSort is a small, focused compiler — every part of the codebase is intentionally readable and approachable.
 
 ---
 
 ## Project layout
 
 ```
-nestsort/
-├── nestsort/
+recsort/
+├── recsort/
 │   ├── __init__.py       # public API exports
-│   ├── __main__.py       # python -m nestsort entry point
+│   ├── __main__.py       # python -m recsort entry point
 │   └── compiler.py       # full pipeline: lexer → parser → semantic → codegen
 ├── tests/
 │   ├── test_lexer.py
@@ -33,8 +33,8 @@ nestsort/
 ## Setting up locally
 
 ```bash
-git clone https://github.com/your-username/nestsort
-cd nestsort
+git clone https://github.com/your-username/recsort
+cd recsort
 pip install -e ".[dev]"
 pytest
 ```
@@ -58,7 +58,7 @@ Issues are labelled by area. Pick one and open a PR.
 
 ### `tooling`
 
-- **`nestsort check <file.nst> <data.json>`** — compile the script, run it against a JSON file, and print the first 20 results for manual inspection
+- **`recsort check <file.nst> <data.json>`** — compile the script, run it against a JSON file, and print the first 20 results for manual inspection
 - **`--watch` mode** — re-compile on file save using `watchfiles`
 - **VS Code extension** — TextMate grammar for `.nst` syntax highlighting
 
@@ -67,7 +67,7 @@ Issues are labelled by area. Pick one and open a PR.
 ## Code style
 
 - Python 3.9+ compatible
-- Standard library only in `nestsort/compiler.py` — no third-party imports
+- Standard library only in `recsort/compiler.py` — no third-party imports
 - Type annotations encouraged but not required for prototypes
 - All new features need at least one test
 
@@ -79,7 +79,7 @@ Issues are labelled by area. Pick one and open a PR.
 pytest                        # all tests
 pytest tests/test_parser.py   # one suite
 pytest -v                     # verbose
-pytest --cov=nestsort         # with coverage (requires pytest-cov)
+pytest --cov=recsort         # with coverage (requires pytest-cov)
 ```
 
 ---
