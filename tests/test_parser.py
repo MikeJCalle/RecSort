@@ -1,9 +1,9 @@
 """
-Tests for RecSort lexer and parser stages.
+Tests for NestSort lexer and parser stages.
 """
 
 import pytest
-from recsort.compiler import parse, ParseError, SortKey
+from nestsort.compiler import parse, ParseError, SortKey
 
 
 # ── Parser: valid inputs ───────────────────────────────────────

@@ -1,9 +1,9 @@
 """
-Tests for RecSort semantic analysis stage.
+Tests for NestSort semantic analysis stage.
 """
 
 import pytest
-from recsort.compiler import parse, analyse, SemanticError
+from nestsort.compiler import parse, analyse, SemanticError
 
 
 def test_valid_flat_passes():

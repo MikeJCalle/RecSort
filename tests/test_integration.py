@@ -5,7 +5,7 @@ assert ordering at every nesting level.
 
 import copy
 import pytest
-from recsort.compiler import compile_nst
+from nestsort.compiler import compile_nst
 
 
 def _run(nst_source, data, func_name="sort_test"):
