@@ -12,7 +12,7 @@ These tests cover grandchildren and deeper, ensuring:
 
 import copy
 import pytest
-from nestsort.compiler import compile_nst
+from recsort.compiler import compile_nst
 
 
 def _run(nst_source, data, func_name="sort_test"):
