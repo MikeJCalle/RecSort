@@ -1,5 +1,5 @@
 """
-Tests for NestSort v0.2 features:
+Tests for RecSort v0.2 features:
   - stable keyword (declaration + generated comment)
   - limit N (flat and nested)
   - group-by <key>
@@ -22,7 +22,7 @@ from pathlib import Path
 
 import pytest
 
-from nestsort.compiler import (
+from recsort.compiler import (
     ParseError,
     SemanticError,
     SemanticWarning,
