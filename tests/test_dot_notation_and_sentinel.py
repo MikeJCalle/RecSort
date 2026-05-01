@@ -6,7 +6,7 @@ Tests for two new _key_expr features:
 
 import copy
 import pytest
-from nestsort.compiler import compile_nst, _dot_access, _type_sentinel
+from recsort.compiler import compile_nst, _dot_access, _type_sentinel
 
 
 # ── helpers ────────────────────────────────────────────────────────────────
